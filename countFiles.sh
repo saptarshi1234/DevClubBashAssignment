@@ -5,8 +5,7 @@ do
 	rf=$( echo $file | rev)						# reversed file name
 	text1=${rf#*.} 								
 	text2=${rf%"$text1"}							
-	text3=${text2%.*}							
-	ext=$( echo $text3 | rev)					# determined the extension 
+	ext=$( echo $text2 | rev)					# determined the extension 
 	if [[ -f $file ]] && ([ "$ext" == "$2" ] || [ "$2" == "" ]); then 
 		((count++))
 	fi
