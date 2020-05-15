@@ -22,5 +22,6 @@ l_dir=${#1}
 echo "Files copied from $1 to $2"
 sync $1 $2
 l_dir=${#2}
-echo "Files copied from $2 to $1"
+# echo "Files copied from $2 to $1"
 sync $2 $1
+echo "hello"
